@@ -1,0 +1,43 @@
+.button-mobile{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+    background-color: #ffffff;
+
+    outline: none;
+}
+.button-mobile span{
+    width: 40px;
+    height: 4px;
+
+    border-radius: 5px;
+
+    background-color: #8234E9;
+
+    transition: all 0.4s;
+}
+
+
+.button-mobile.active span:nth-child(1){
+    transform: translateY(9px) rotate(-45deg);
+}
+
+.button-mobile.active span:nth-child(2){
+    width: 0;
+    opacity: 0;
+}
+
+.button-mobile.active span:nth-child(3){
+    transform: translateY(-8px) rotate(45deg);
+}
